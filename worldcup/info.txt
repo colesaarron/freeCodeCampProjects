@@ -1,0 +1,11 @@
+To log into database:
+psqg --username=freecodecamp --dbname=postgres
+
+Connect to created database:
+\c database_name
+
+To dump a copy of the database:
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+
+To rebuild the database:
+psql -U postgres < worldcup.sql
